@@ -1,39 +1,23 @@
 $(document).ready(function () {
-    // var swiper = new Swiper(".latestnews-slider", {
-    //     slidesPerView: 1,
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 2,
     //     spaceBetween: 20,
-    //     loop: true,
-    //     speed: 1200,
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    //     autoplay: {
-    //         delay: 2500,
-    //         disableOnInteraction: false,
-    //     },
-    //     breakpoints: {
-    //         576: {
-    //             slidesPerView: 1.5,
-    //             spaceBetween: 20,
-    //         },
-    //         767: {
-    //             slidesPerView: 2,
-    //             spaceBetween: 20,
-    //         },
-
-    //     },
     // });
-
-
-
-
-
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 20,
+    $("nav a, .leaverequest").on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 777);
+        e.preventDefault();
+        return false;
     });
 
-
+    $(window).on('scroll load', function () {
+        if ($(this).scrollTop() > 10) {
+            $('.header').addClass('scroll');
+        } else {
+            $('.header').removeClass('scroll');
+        }
+    });
 
 })

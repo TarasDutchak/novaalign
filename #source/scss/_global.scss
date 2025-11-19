@@ -122,3 +122,24 @@ img {
     object-fit: cover;
     object-position: 50% 50%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media(max-width:1399.8px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h2,
+    h3 {
+        font-size: 32px;
+    }
+}

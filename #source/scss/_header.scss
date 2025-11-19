@@ -36,6 +36,10 @@ header.header {
         flex-wrap: wrap;
         align-items: center;
     }
+
+    &.scroll {
+        box-shadow: 0 0 6px #d1d1d1;
+    }
 }
 
 .header__logo {
@@ -45,6 +49,7 @@ header.header {
 
     img {
         max-width: 98px;
+        vertical-align: top;
     }
 }
 
@@ -63,7 +68,8 @@ header.header {
     max-width: 225px;
     flex: 0 0 225px;
 
-    img, svg {
+    img,
+    svg {
         margin-left: 10px;
     }
 }
@@ -77,4 +83,20 @@ header.header nav {
 .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media(max-width:1399.8px) {
+    header.header ul li {
+        margin-right: 40px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .leaverequest {
+        font-size: 14px;
+        min-height: 48px;
+        border-radius: 16px;
+    }
 }

@@ -21,13 +21,13 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#">Як ми допомагаємо</a></li>
-                        <li><a href="#">Для кого</a></li>
-                        <li><a href="#">Що ви отримуєте</a></li>
-                        <li><a href="#">Як усе працює</a></li>
+                        <li><a href="#1">Як ми допомагаємо</a></li>
+                        <li><a href="#2">Для кого</a></li>
+                        <li><a href="#3">Що ви отримуєте</a></li>
+                        <li><a href="#4">Як усе працює</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="leaverequest">
+                <a href="#5" class="leaverequest">
                     Залишити заявку
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <div class="assistance">
+        <div class="assistance" id="1">
             <div class="container">
                 <h2 class="text-center">Як ми допомагаємо</h2>
                 <div class="flex-wrapper">
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="audience">
+        <div class="audience" id="2">
             <img src="img/bg-element1.png" alt="img" class="bgelement">
             <div class="container">
                 <h3 class="text-center">Для кого</h3>
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <div class="benefits">
+        <div class="benefits" id="3">
             <div class="container">
                 <h3 class="text-center">Що ви отримуєте</h3>
                 <div class="row">
@@ -199,7 +199,7 @@
             </div>
         </div>
 
-        <div class="process">
+        <div class="process" id="4">
             <div class="container">
                 <h3 class="text-center">Як усе працює</h3>
                 <div class="row">
@@ -347,24 +347,87 @@
             <div class="container">
                 <h3 class="text-center">Чому NovaAlign</h3>
                 <div class="testimonials">
-                    <div class="swiper mySwiper">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <div class="testim-item">
+                                <div class="testimonials-slide">
+                                    <div class="content">
+                                        <img class="q-icon" src="img/q.png" alt="img">
+                                        <p>
+                                            Завдяки доступній вартості NovaAlign я можу пропонувати пацієнтам
+                                            елайнери
+                                            преміум-якості та надавати найкращий сервіс кожному, хто звертається до
+                                            нашої клініки.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="ava">
+                                            <img class="fill-img" src="img/ava1.png" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p>
+                                                <span>Олександр К.</span>
+                                                лікар-стоматолог, м. Київ
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <div class="testim-item">
+                                <div class="testimonials-slide">
+                                    <div class="content">
+                                        <img class="q-icon" src="img/q.png" alt="img">
+                                        <p>
+                                            З NovaAlign не потрібно довго думати — це очевидний вибір. Команда
+                                            експертів дбає про кожен зуб, досягаючи ідеального змикання, правильної
+                                            кривої та бездоганної усмішки.
+                                        </p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="ava">
+                                            <img class="fill-img" src="img/ava2.png" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p>
+                                                <span>Ірина М.</span>
+                                                лікар-стоматолог, м. Львів
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="text-center">
                                     <div class="testimonials-slide">
-                                        <img src="img/q.png" alt="img">
-                                        <p>
-                                            Завдяки доступній вартості NovaAlign я можу пропонувати пацієнтам елайнери
-                                            преміум-якості та надавати найкращий сервіс кожному, хто звертається до
-                                            нашої клініки.
-                                        </p>
+                                        <div class="content">
+                                            <img class="q-icon" src="img/q.png" alt="img">
+                                            <p>
+                                                Завдяки доступній вартості NovaAlign я можу пропонувати пацієнтам
+                                                елайнери
+                                                преміум-якості та надавати найкращий сервіс кожному, хто звертається до
+                                                нашої клініки.
+                                            </p>
+                                        </div>
                                         <div class="author">
                                             <div class="ava">
-                                                <img src="img/ava1.png" alt="img">
+                                                <img class="fill-img" src="img/ava1.png" alt="img">
                                             </div>
                                             <div class="descr">
-                                                <span>Олександр К.</span>
-                                                лікар-стоматолог, м. Київ
+                                                <p>
+                                                    <span>Олександр К.</span>
+                                                    лікар-стоматолог, м. Київ
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -373,17 +436,68 @@
                             <div class="swiper-slide">
                                 <div class="text-center">
                                     <div class="testimonials-slide">
-                                        Slide 1
+                                        <div class="content">
+                                            <img class="q-icon" src="img/q.png" alt="img">
+                                            <p>
+                                                З NovaAlign не потрібно довго думати — це очевидний вибір. Команда
+                                                експертів дбає про кожен зуб, досягаючи ідеального змикання, правильної
+                                                кривої та бездоганної усмішки.
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <div class="ava">
+                                                <img class="fill-img" src="img/ava2.png" alt="img">
+                                            </div>
+                                            <div class="descr">
+                                                <p>
+                                                    <span>Ірина М.</span>
+                                                    лікар-стоматолог, м. Львів
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="text-center">
-                                    <div class="testimonials-slide">
-                                        Slide 1
-                                    </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section" id="5">
+            <div class="container">
+                <div class="flex-wrapper">
+                    <div class="leftcol">
+                        <div class="contact-content">
+                            <h3 class="text-center">Готові приєднатися?</h3>
+                            <p>
+                                Ми працюємо з лікарями напряму, без зайвих націнок.
+                                Залиште заявку — і ми зв’яжемося, щоб обговорити деталі.
+                            </p>
+                            <form action="#">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Ім’я">
                                 </div>
-                            </div>
+                                <div class="inputfield">
+                                    <input type="number" placeholder="Номер телефону">
+                                </div>
+                                <div class="inputfield">
+                                    <input type="email" placeholder="Електронна пошта">
+                                </div>
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Клініка">
+                                </div>
+                                <button type="submit" class="bluebtn">
+                                    Почати співпрацю
+                                    <img src="img/submit-arrow.svg" alt="icon">
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="rightcol">
+                        <div class="imgwrap">
+                            <img src="img/contact.jpg" alt="img">
                         </div>
                     </div>
                 </div>
@@ -392,10 +506,32 @@
 
 
 
-
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer__logo">
+                <img src="img/footer-logo.svg" alt="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/ins.svg" alt="iocn">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/fb.svg" alt="iocn">
+                    </a>
+                </li>
+            </ul>
+            <p>© 2025. Усі права захищені</p>
+            <p>
+                <a href="#">Контакти</a> <span>|</span> <a href="#">Політика конфіденційності</a>
+            </p>
+
+        </div>
+    </footer>
 
 
 
