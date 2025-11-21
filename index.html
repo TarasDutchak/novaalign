@@ -8,7 +8,6 @@
     <title>Main</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,6 +40,9 @@
                             stroke-linejoin="round" />
                     </svg>
                 </a>
+                <!-- <div class="header__burger">
+                    <button class="burger burger2"><span></span></button>
+                </div> -->
             </div>
         </div>
     </header>
@@ -53,13 +55,14 @@
                     <h1>
                         Якість для пацієнтів. Підтримка для лікарів.
                     </h1>
+                    <img class="hero__illustration-mob" src="img/illustration1.svg" alt="illustration">
                     <div class="descr">
                         <p>
                             Партнерська система елайнерів для лікарів, які обирають розумний баланс між <b>якістю,<br>
                                 сервісом
                                 і вартістю</b>.
                         </p>
-                        <a href="#" class="bluebtn">
+                        <a href="#5" class="bluebtn scrolllink">
                             Залишити заявку
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
@@ -82,7 +85,7 @@
 
         <div class="assistance" id="1">
             <div class="container">
-                <h2 class="text-center">Як ми допомагаємо</h2>
+                <h2>Як ми допомагаємо</h2>
                 <div class="flex-wrapper">
                     <div class="assistance-item">
                         <div class="icon">
@@ -118,7 +121,7 @@
         <div class="audience" id="2">
             <img src="img/bg-element1.png" alt="img" class="bgelement">
             <div class="container">
-                <h3 class="text-center">Для кого</h3>
+                <h3>Для кого</h3>
                 <div class="audience-item">
                     <img class="fill-img" src="img/audience.jpg" alt="img">
                     <ul>
@@ -148,7 +151,7 @@
 
         <div class="benefits" id="3">
             <div class="container">
-                <h3 class="text-center">Що ви отримуєте</h3>
+                <h3>Що ви отримуєте</h3>
                 <div class="row">
                     <div class="customcol-sm">
                         <div class="benefits-item v1">
@@ -201,7 +204,7 @@
 
         <div class="process" id="4">
             <div class="container">
-                <h3 class="text-center">Як усе працює</h3>
+                <h3>Як усе працює</h3>
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="process-pic">
@@ -279,7 +282,7 @@
         <div class="infosection">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="info-item">
                             <div class="wrapper">
                                 <h5>Швейцарське планування</h5>
@@ -287,13 +290,16 @@
                                     Кожен кейс обробляється командою Hirsch Dynamics (CH).<br>
                                     Сучасна біомеханіка, стабільні результати, прозоре 3D-планування.
                                 </p>
-                                <img class="infpic1" src="img/img1.jpg" alt="img">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/img1.jpg">
+                                    <img class="infpic1" src="img/mob1.jpg" alt="Опис картинки">
+                                </picture>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 flexdirecol">
+                    <div class="col-lg-8 col-md-6 flexdirecol">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-lg-6">
                                 <div class="info-item">
                                     <div class="wrapper">
                                         <h5>Преміальний матеріал Zendura™</h5>
@@ -308,11 +314,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-lg-6">
                                 <div class="info-item">
                                     <div class="text-end">
                                         <div class="wrapper">
-                                            <img class="infpic3" src="img/img3.jpg" alt="img">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="img/img3.jpg">
+                                                <img class="infpic3" src="img/mob2.jpg" alt="Опис картинки">
+                                            </picture>
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +354,7 @@
 
         <div class="whywe">
             <div class="container">
-                <h3 class="text-center">Чому NovaAlign</h3>
+                <h3>Чому NovaAlign</h3>
                 <div class="testimonials">
                     <div class="row">
                         <div class="col-lg-6 text-center">
@@ -469,7 +478,7 @@
                 <div class="flex-wrapper">
                     <div class="leftcol">
                         <div class="contact-content">
-                            <h3 class="text-center">Готові приєднатися?</h3>
+                            <h3>Готові приєднатися?</h3>
                             <p>
                                 Ми працюємо з лікарями напряму, без зайвих націнок.
                                 Залиште заявку — і ми зв’яжемося, щоб обговорити деталі.
@@ -534,13 +543,7 @@
     </footer>
 
 
-
-
-
-
-
     <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/swiper.js"></script>
     <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
