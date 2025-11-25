@@ -1,5 +1,4 @@
 $text-color: #333;
-
 body,
 html {
     height: 100%;
@@ -77,6 +76,7 @@ p {
 
 h2,
 h3 {
+     font-family: "Manrope", sans-serif;
     color: $text-color;
     font-weight: 700;
     font-size: 40px;
@@ -93,7 +93,7 @@ h3 {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: 22px;
+    border-radius: 20px;
     transition: 0.3s;
 
     img,

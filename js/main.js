@@ -17,34 +17,36 @@ $(document).ready(function () {
         }
     });
 
-    // if ($('.burger2').length) {
-    //     (function () {
-    //         var burger2;
-    //         burger2 = document.querySelector(".burger2");
-    //         burger2.addEventListener("click", function () {
-    //             return burger2.classList.toggle("on");
-    //         });
 
-    //     }).call(this);
-    // }
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1200,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
 
-    // $('.burger').click(function () {
-    //     $('header.header').toggleClass('show');
-    //     $('body').toggleClass('hidden');
-    // })
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+
+        },
+    });
 
 
-    // const header = document.querySelector('header');
-    // if (!header) return;
-    // if (header.querySelector('.overlay')) return;
-    // const overlay = document.createElement('div');
-    // overlay.className = 'overlay';
-    // header.appendChild(overlay);
 
-    // $('.overlay').on('click', function () {
-    //     $('header.header').removeClass('show');
-    //     $('body').removeClass('hidden');
-    //     $('.burger').removeClass('on');
-    // })
+
+
 
 })

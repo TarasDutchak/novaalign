@@ -101,6 +101,10 @@ button.burger {
     display: none;
 }
 
+.leaverequest.mob {
+    display: none;
+}
+
 @media(max-width:1399.8px) {
     header.header ul li {
         margin-right: 40px;
@@ -293,21 +297,43 @@ button.burger {
             }
         }
     }
+
+    .leaverequest.mob {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        min-height: 56px;
+        color: #203182;
+        border-color: #203182;
+
+        &:hover {
+            background: transparent;
+
+            img {
+                filter: none;
+            }
+        }
+    }
+
+    .leaverequest.desck {
+        display: none;
+    }
 }
 
 @media(max-width:575.8px) {
     .leaverequest {
-        border-radius: 60px;
+        border-radius: 20px;
         font-size: 16px;
         font-weight: 500;
         min-height: 44px;
         padding: 4px 5px 3px;
-        max-width: 220px;
+        max-width: 196px;
 
         svg {
             margin-left: 6px;
         }
     }
+
 }
 
 @media(max-width:370.8px) {

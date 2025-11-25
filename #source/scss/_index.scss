@@ -1,8 +1,6 @@
 .hero {
-    padding: 100px 0 50px;
     position: relative;
-    height: 100vh;
-    min-height: 650px;
+    // height: 100vh;
     display: flex;
     align-items: center;
 
@@ -36,18 +34,19 @@
     position: relative;
 }
 
-.hero__illustration {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+// .hero__illustration {
+//     position: absolute;
+//     right: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
 
 .assistance {
-    padding: 40px 0 30px;
+    padding: 80px 0 27px;
 
     h2 {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .flex-wrapper {
@@ -73,6 +72,7 @@
     .title {
         margin-bottom: 20px;
         font-size: 24px;
+        font-weight: 500;
 
         span {
             position: relative;
@@ -95,18 +95,18 @@
     p {
         margin: 0;
         font-size: 18px;
+        line-height: 150%;
     }
 }
 
 .audience {
-    padding: 100px 0 128px;
+    padding: 80px 0;
     position: relative;
 
     h3 {
         margin-bottom: 50px;
+        text-align: center;
     }
-
-
 
     .bgelement {
         position: absolute;
@@ -164,11 +164,12 @@
 }
 
 .benefits {
-    padding: 40px 0 80px;
+    padding: 55px 0;
     background: #CBD4E1;
 
     h3 {
         margin-bottom: 50px;
+        text-align: center;
     }
 }
 
@@ -203,11 +204,14 @@
     p {
         margin: 0;
         font-size: 20px;
-        font-weight: 600;
     }
 
     img {
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 100%;
+        right: 30px;
     }
 
     &.v1 {
@@ -216,9 +220,7 @@
         }
 
         img {
-            width: 92px;
-            right: 29px;
-            top: 44px;
+            max-width: 92px;
         }
     }
 
@@ -228,10 +230,7 @@
         }
 
         img {
-            max-height: 154px;
             max-width: 193px;
-            right: 29px;
-            top: 13px;
         }
     }
 
@@ -241,10 +240,7 @@
         }
 
         img {
-            max-height: 150px;
             max-width: 213px;
-            right: 29px;
-            top: 15px;
         }
     }
 
@@ -254,10 +250,7 @@
         }
 
         img {
-            max-height: 150px;
             max-width: 129px;
-            right: 29px;
-            top: 35px;
         }
     }
 
@@ -267,19 +260,21 @@
         }
 
         img {
-            max-height: 88px;
-            max-width: 88px;
-            right: 29px;
-            bottom: 28px;
+            max-width: 172px;
+            bottom: 0;
+            top: initial;
+            transform: none;
+            right: 0;
         }
     }
 }
 
 .process {
-    padding: 50px 0 80px;
+    padding: 54px 0 23px;
 
     h3 {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .text-center.mt60 {
@@ -288,6 +283,16 @@
 
     .bluebtn {
         min-width: 318px;
+    }
+
+    .col-lg-5 {
+        max-width: 38%;
+        flex: 0 0 38%;
+    }
+
+    .col-lg-7 {
+        max-width: 62%;
+        flex: 0 0 62%;
     }
 }
 
@@ -348,11 +353,15 @@
                 background: url('../img/decor.png') no-repeat center / 100%;
                 position: absolute;
                 left: 0;
-                bottom: -5px;
+                top: 7px;
                 z-index: 1;
             }
         }
     }
+}
+
+.col-12 .process-item {
+    height: 143px;
 }
 
 .process-pic {
@@ -363,7 +372,7 @@
 }
 
 .infosection {
-    padding: 55px 0 90px;
+    padding: 55px 0 70px;
     position: relative;
 
     .container {
@@ -390,6 +399,11 @@
         display: inline-block;
     }
 
+    .wrapper-lg {
+        max-width: 426px;
+        display: inline-block;
+    }
+
     h5 {
         margin-bottom: 24px;
         font-family: "Manrope", sans-serif;
@@ -404,22 +418,22 @@
 
     .infpic1 {
         width: 100%;
-        max-width: 312px;
+        max-width: 315px;
         margin-top: 137px;
-        border-radius: 20px;
+        border-radius: 16px;
     }
 
     .infpic2 {
         width: 100%;
-        max-width: 205px;
+        max-width: 100%;
         margin-top: 57px;
-        border-radius: 20px;
+        border-radius: 16px;
     }
 
     .infpic3 {
         width: 100%;
         max-width: 312px;
-        border-radius: 20px;
+        border-radius: 16px;
         display: inline-block;
     }
 }
@@ -427,7 +441,6 @@
 .infolist {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -436,7 +449,7 @@
         margin: 0;
         font-style: italic;
         font-size: 20px;
-        text-transform: capitalize;
+        color: #11559E;
     }
 
     li {
@@ -465,6 +478,7 @@
 
     h3 {
         margin-bottom: 50px;
+        text-align: center;
     }
 }
 
@@ -569,7 +583,6 @@
     }
 
     p {
-        text-align: center;
         margin-bottom: 8px;
         font-weight: 300;
         color: #676767;
@@ -622,7 +635,147 @@ button.bluebtn {
     }
 }
 
-.hero__illustration-mob {
+// .hero__illustration-mob {
+//     display: none;
+// }
+
+.hero {
+    height: auto;
+    padding: 116px 0 15px;
+}
+
+.hero__contant {
+    width: 100%;
+    max-width: 59%;
+    flex: 0 0 59%;
+    padding-top: 25px;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 41%;
+    flex: 0 0 41%;
+}
+
+.hero__img {
+    img {
+        border-radius: 16px;
+        width: 100%;
+    }
+}
+
+.hero {
+    .infolist {
+        padding-top: 22px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 103px;
+            max-width: 171px;
+        }
+    }
+}
+
+.forbox {
+    border-radius: 16px;
+    border: 1px solid #11559E;
+    padding: 38px;
+    height: 100%;
+
+    .title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 36px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            font-size: 18px;
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 36px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url('../img/check-icon.svg') no-repeat center / 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.audience__wrapper .imgwrap {
+    position: relative;
+    border-radius: 16px;
+    height: 308px;
+    overflow: hidden;
+}
+
+.audience__wrapper {
+    max-width: 1096px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 44px;
+    height: 44px;
+    max-width: 44px;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    left: 100px;
+}
+
+.swiper-button-next {
+    right: 100px;
+}
+
+.testimonials {
+    .swiper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+
+.slider-wrapp {
+    position: relative;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.title-mob {
     display: none;
 }
 
@@ -637,9 +790,9 @@ button.bluebtn {
         margin-bottom: 30px;
     }
 
-    .hero__illustration {
-        max-width: 45%;
-    }
+    // .hero__illustration {
+    //     max-width: 45%;
+    // }
 
     .assistance-item .title {
         font-size: 21px;
@@ -672,12 +825,14 @@ button.bluebtn {
         p {
             font-size: 18px;
         }
+
+        img {
+            right: 20px;
+        }
     }
 
     .benefits-item.v1 img {
         width: 70px;
-        top: initial;
-        bottom: 20px;
     }
 
     .benefits-item.v2 img {
@@ -687,17 +842,16 @@ button.bluebtn {
 
     .benefits-item.v3 img {
         max-width: 160px;
-        max-height: 115px;
+
     }
 
     .benefits-item.v4 img {
         max-height: 100px;
-        top: 25px;
+
     }
 
     .benefits-item.v6 img {
-        max-width: 60px;
-        bottom: 15px;
+        max-width: 120px;
     }
 
     .process-item {
@@ -738,12 +892,34 @@ button.bluebtn {
         padding: 50px;
     }
 
+    .hero .infolist {
+        li {
+            margin-right: 70px;
+        }
+    }
+
+    .hero .descr {
+        padding-bottom: 50px;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
 }
 
 @media(max-width:1199.8px) {
     .hero h1 {
-        font-size: 48px;
+        font-size: 42px;
         max-width: 600px;
+    }
+
+    .hero .infolist li {
+        margin-right: 40px;
     }
 
     .hero .descr {
@@ -852,6 +1028,9 @@ button.bluebtn {
     }
 
 
+
+
+
     .benefits,
     .audience,
     .process {
@@ -909,12 +1088,10 @@ button.bluebtn {
         margin-top: 40px;
     }
 
-    .info-item .infpic2 {
-        display: none;
-    }
+    .info-item .infpic2 {}
 
     .info-item .infpic3 {
-        margin-top: 30px;
+        display: none;
     }
 
     .testim-item {
@@ -934,12 +1111,60 @@ button.bluebtn {
     .contact-section {
         padding: 60px 0;
     }
+
+    .hero .infolist {
+        display: none;
+    }
+
+    .audience .bgelement {
+        display: none;
+    }
+
+
+    .hero .descr {
+        padding-bottom: 0;
+        border: none;
+    }
+
+    .forbox {
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .process-pic {
+        display: none;
+    }
+
+    .process .col-lg-7 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .infpic3 {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #0E447E;
+    }
+
+
 }
 
 @media(max-width:767.8px) {
-    .hero__illustration {
-        display: none;
-    }
+    // .hero__illustration {
+    //     display: none;
+    // }
 
     .hero {
         padding: 100px 0 35px;
@@ -950,12 +1175,12 @@ button.bluebtn {
         }
     }
 
-    .hero__illustration-mob {
-        width: 100%;
-        max-width: 280px;
-        display: block;
-        margin-bottom: 20px;
-    }
+    // .hero__illustration-mob {
+    //     width: 100%;
+    //     max-width: 280px;
+    //     display: block;
+    //     margin-bottom: 20px;
+    // }
 
     .hero .descr {
         max-width: 315px;
@@ -977,18 +1202,6 @@ button.bluebtn {
         }
     }
 
-    .benefits-item.v2 img,
-    .benefits-item.v3 img,
-    .benefits-item.v4 img {
-        bottom: 10px;
-        right: 10px;
-        top: initial;
-    }
-
-    .benefits-item.v4 img {
-        max-width: 100px;
-    }
-
     .info-item .wrapper {
         max-width: 100%;
     }
@@ -1005,7 +1218,7 @@ button.bluebtn {
     }
 
     .infosection .flexdirecol {
-        margin-top: 30px;
+        margin-top: 66px;
     }
 
     .info-item h5 {
@@ -1042,12 +1255,53 @@ button.bluebtn {
     .contact-content {
         max-width: 100%;
     }
+
+    .hero__contant,
+    .hero__img {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .hero__img {
+        margin-top: 30px;
+    }
+
+    .hero__contant {
+        text-align: center;
+    }
+
+    .hero .descr {
+        max-width: 100%;
+    }
+
+    .benefits-item img:not(.fill-img) {
+        top: initial;
+        transform: none;
+        right: 15px;
+        bottom: 15px;
+        max-width: 100px;
+    }
+
+    .info-item .wrapper-lg {
+        max-width: 100%;
+    }
+
+    .info-item .infpic1,
+    .info-item .infpic2,
+    .info-item .infpic3 {
+        max-width: 100%;
+    }
+
+    .infolist p {
+        font-size: 18px;
+    }
+
 }
 
 @media(max-width:575.8px) {
-    .hero__illustration-mob {
-        margin: 0 auto 20px;
-    }
+    // .hero__illustration-mob {
+    //     margin: 0 auto 20px;
+    // }
 
     .hero .descr .bluebtn {
         width: 100%;
@@ -1115,6 +1369,7 @@ button.bluebtn {
 
     .benefits-item {
         height: 180px;
+        margin-bottom: 30px;
 
         p {
             font-size: 16px;
@@ -1147,7 +1402,7 @@ button.bluebtn {
     .benefits-item.v3 img {
         right: 30px;
         top: 44px;
-        max-width: 121px;
+        max-width: 100px;
     }
 
     .benefits-item.v4 img {
@@ -1167,8 +1422,9 @@ button.bluebtn {
     }
 
     .process-item {
-        min-height: 90px;
+        min-height: 112px;
         padding: 0 16px;
+        margin-bottom: 30px;
     }
 
     .process-item {
@@ -1261,6 +1517,77 @@ button.bluebtn {
         font-size: 16px;
     }
 
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .descr .bluebtn {
+        min-height: 56px;
+        max-width: initial;
+        width: auto;
+        min-width: 256px;
+    }
+
+    .hero__img img {
+        border-radius: 0;
+        width: calc(100% + 40px);
+        max-width: initial;
+        margin-left: -20px;
+    }
+
+    .hero__img {
+        margin-top: 40px;
+    }
+
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .title-mob {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .forbox .title {
+        display: none;
+    }
+
+    .forbox {
+        padding: 32px 26px;
+    }
+
+    .audience__wrapper .imgwrap {
+        height: 238px;
+    }
+    
+    .benefits-item.v6 img {
+        max-width: 137px;
+        height: auto;
+    }
+
+    .benefits-item p {
+        font-size: 18px;
+    }
+
+    .bluebtn {
+        min-height: 56px;
+    }
+
+    .infosection .bgelement2 {
+        bottom: 3%;
+    }
+
+    .infolist li img {
+        height: 40px;
+        margin-bottom: 12px;
+    }
+
+    .contact-content h3 {
+        margin-bottom: 30px;
+    }
+
+   
 }
 
 @media(max-width:370.8px) {
@@ -1307,15 +1634,15 @@ button.bluebtn {
 
 
 
-@media(min-width:992.8px) and (max-height:750px) {
-    .hero h1 {
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
+// @media(min-width:992.8px) and (max-height:750px) {
+//     .hero h1 {
+//         font-size: 50px;
+//         margin-bottom: 30px;
+//     }
 
-    .hero .descr p {
-        font-size: 21px;
-        margin-bottom: 30px;
-    }
+//     .hero .descr p {
+//         font-size: 21px;
+//         margin-bottom: 30px;
+//     }
 
-}
+// }
